@@ -32,6 +32,7 @@ public class Main {
                break;
            default:
                System.out.println("No es un operador valido");
+               main(args);
                return;
 
 
