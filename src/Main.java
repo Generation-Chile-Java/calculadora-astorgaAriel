@@ -10,7 +10,7 @@ public class Main {
     double primerNumero1 = Double.parseDouble(primerNumero);
     double segundoNumero1 = Double.parseDouble(segundoNumero);
     double resultado;
-    String operador = JOptionPane.showInputDialog("Para Restar ingresa -  \n Para Sumar ingresa +  \n Para multiplicar ingresa *  \n Para dividir ingresa / \n Para porcentaje ingresa %");
+    String operador = JOptionPane.showInputDialog("Para Restar ingresa -  \n Para Sumar ingresa +  \n Para multiplicar ingresa *  \n Para dividir ingresa / \n Para porcentaje ingresa % \n Para resto de divicion ingresa: resto");
 
        switch (operador) {
            case "+":
@@ -32,6 +32,9 @@ public class Main {
                break;
            case "%":
                resultado = ((primerNumero1 * segundoNumero1) / 100);
+               break;
+           case "resto":
+               resultado = primerNumero1 % segundoNumero1;
                break;
            default:
                System.out.println("No es un operador valido");
